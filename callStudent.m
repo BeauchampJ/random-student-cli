@@ -12,7 +12,10 @@ function callStudent (courseIdent)
 % Copyright (C) 2018 Samuel Bechara
 % Author: Samuel Bechara
 % Created: 2018-01-04
-% Last modified: 9-Nov-2021
+% Last modified: 29-Jul-2022
+
+%Randomize seed for random number selection. This prevents students being re-called after relaunching either matlab window or terminal shell
+rng shuffle;
 
 if nargin ~= 1
     error('This function requires exactly 1 input. See Docs');
